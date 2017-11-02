@@ -1,8 +1,9 @@
-# Alisa Momin, Sonali Mahendran, Rice BIOE 421 Final Project
+# Alisa Momin, Sonali Mahendran, Rice BIOE 421 Final Project: Color Mouse and Filter Overlay
 
 ## Project Brainstorm:
 
 Draft title: Augmented Reality 
+
 Description: We are really interested in working with facial recognition and have ideas related to this: 
 1. We can create an augmented reality project such 
 as on Snapchat, where the camera can recognize facial features and adds filters that can follow 
