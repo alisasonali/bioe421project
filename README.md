@@ -2,14 +2,16 @@
 
 ## Project Brainstorm:
 
-Draft title: Augmented Reality Description: We are really interested in working with facial 
-recognition and have ideas related to this: 1. We can create an augmented reality project such 
+Draft title: Augmented Reality 
+Description: We are really interested in working with facial recognition and have ideas related to this: 
+1. We can create an augmented reality project such 
 as on Snapchat, where the camera can recognize facial features and adds filters that can follow 
-your movement. 2. We can create a program that can follow specific facial movements, or eye 
+your movement. 
+2. We can create a program that can follow specific facial movements, or eye 
 movements as part as inputs in a computer game or use these movements to possibly move a 
 cursor.
 
-Project Abstract:
+## Project Abstract:
 
 Our goal is to design an interactive and engaging computer mouse for painting using the Circuit 
 Playground and a paint program such as GNU Paint/GPaint or Pinta. The Circuit Playground will 
