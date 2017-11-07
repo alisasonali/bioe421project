@@ -76,6 +76,7 @@ void loop() {
     return;
   }
 
+
   // Grab initial left & right button states to later check if they are pressed
   // or released.  Do this early in the loop so other processing can take some
   // time and the button state change can be detected.
@@ -143,40 +144,45 @@ void loop() {
 void capt() {    // this function just senses the sensors that are pushed and saves the numbers corresponding to the sensors in an array
 
   if (CircuitPlayground.readCap(3, CAP_SAMPLES) >= CAP_THRESHOLD) {
-   // Serial.println("pink");
-   int num = 3;
-   Serial.println(num);
+    // Serial.println("pink");
+    int num = 3;
+    Serial.println(num);
   }
   else if (CircuitPlayground.readCap(2, CAP_SAMPLES) >= CAP_THRESHOLD) {
-     int num = 2;
-   Serial.println(num);
+    int num = 2;
+    Serial.println(num);
 
   }
   else if (CircuitPlayground.readCap(0, CAP_SAMPLES) >= CAP_THRESHOLD) {
     int num = 0;
-   Serial.println(num);
+    Serial.println(num);
   }
   else if (CircuitPlayground.readCap(1, CAP_SAMPLES) >= CAP_THRESHOLD) {
-      int num = 1;
-   Serial.println(num);
-   
+    int num = 1;
+    Serial.println(num);
+
   }
   else if (CircuitPlayground.readCap(12, CAP_SAMPLES) >= CAP_THRESHOLD) {
     int num = 12;
-   Serial.println(num);
- 
+    Serial.println(num);
+
   }
   else if (CircuitPlayground.readCap(6, CAP_SAMPLES) >= CAP_THRESHOLD) {
-       int num = 6;
-   Serial.println(num);
+    int num = 6;
+    Serial.println(num);
   }
   else if (CircuitPlayground.readCap(9, CAP_SAMPLES) >= CAP_THRESHOLD) {
-      int num = 9;
-   Serial.println(num);
+    int num = 9;
+    Serial.println(num);
   }
   else if (CircuitPlayground.readCap(10, CAP_SAMPLES) >= CAP_THRESHOLD) {
-       int num = 10;
-   Serial.println(num);
+    int num = 10;
+    Serial.println(num);
+  }
+
+  if (!CircuitPlayground.slideSwitch() && CircuitPlayground.rightButton()) {
+    int num = 4;
+    Serial.println(num);
   }
 }
 
