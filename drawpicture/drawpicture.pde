@@ -41,9 +41,9 @@ void draw() {
     img.stroke(r, g, b);
   }
     else if (num == 1) {
-    int r = 128;
-    int g = 128;
-    int b = 0;
+    int r = 247;
+    int g = 240;
+    int b = 34;
     img.stroke(r, g, b);
   }
      else if (num == 12) {
@@ -53,9 +53,9 @@ void draw() {
     img.stroke(r, g, b);
   }
        else if (num == 6) {
-    int r = 0;
-    int g = 0x10;
-    int b = 0x10;
+    int r = 16;
+    int g = 188;
+    int b = 171;
     img.stroke(r, g, b);
   }
     else if (num == 9) {
@@ -65,9 +65,9 @@ void draw() {
     img.stroke(r, g, b);
   }
   else if (num == 10) {
-    int r = 0x10;
-    int g = 0;
-    int b = 0x10;
+    int r = 93;
+    int g = 19;
+    int b = 178;
     img.stroke(r, g, b);
   }   else if (num == 4) {
        img.endDraw();

@@ -62,11 +62,11 @@ void setup() {
   CircuitPlayground.setPixelColor(0, 236,   51,  116); //pink
   CircuitPlayground.setPixelColor(1, 255,   0,     0); //red
   CircuitPlayground.setPixelColor(3, 255,   64,    0); //orange
-  CircuitPlayground.setPixelColor(4, 128,  128,    0); //yellow
+  CircuitPlayground.setPixelColor(4, 128,  128,   0); //yellow
   CircuitPlayground.setPixelColor(5,   0,  255,    0); //green
-  CircuitPlayground.setPixelColor(6,   0,   0x10,  0x10); //aqua
+  CircuitPlayground.setPixelColor(6,   16,   188,  171); //teal
   CircuitPlayground.setPixelColor(8,   0,    0,  255); //blue
-  CircuitPlayground.setPixelColor(9, 0x10, 0, 0x10); //purple
+  CircuitPlayground.setPixelColor(9, 93, 19, 178); //purple
 }
 
 void loop() {
