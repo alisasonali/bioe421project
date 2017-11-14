@@ -1,6 +1,7 @@
 #! /usr/bin/python
 
 import cv2  # OpenCV Library
+import os
  
 #-----------------------------------------------------------------------------
 #       Load and configure Haar Cascade Classifiers
@@ -41,8 +42,10 @@ origMustacheHeight, origMustacheWidth = imgMustache.shape[:2]
  
 # collect video input from first webcam on system
 video_capture = cv2.VideoCapture('find_our_faces.mp4')
+iter = 0
  
 while True:
+    iter = iter + 1
     # Capture video feed
     #video_capture = cv2.VideoCapture(video_capture) 
     ret, frame = video_capture.read()
@@ -123,13 +126,17 @@ while True:
             break
  
     # Display the resulting frame
-    cv2.imshow('Video', frame)
+    cv2.imshow('hii Video', frame)
+    cv2.imwrite("/home/pi/bioe421project/modifiedframes/{0:d}.png".format(iter), frame)
  
     # press any key to exit
     # NOTE;  x86 systems may need to remove: " 0xFF == ord('q')"
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
- 
+
+
+os.system("ffmpeg -f image2 -framerate 12 -i /home/pi/bioe421project/modifiedframes/%d.png playback.avi")
+os.system("omxplayer playback.avi")
 # When everything is done, release the capture
 video_capture.release()
 cv2.destroyAllWindows()
