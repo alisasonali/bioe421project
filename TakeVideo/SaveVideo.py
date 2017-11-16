@@ -1,32 +1,14 @@
 #! /usr/bin/python
 
+import picamera
 import cv2
-from picamera.array import PiRGBArray
-from picamera import PiCamera
-import time
-import numpy as np
 
+camera = picamera.PiCamera()
+camera.resolution = (640, 480)
+camera.start_preview()
+camera.start_recording('my_video.h264')
+camera.wait_recording(10)
+#key = cv2.waitKey(1) & 0xFF
 
-camera = PiCamera()
-camera.resolution = (640,480)
-camera.framerate = 32
-rawCapture = PiRGBArray(camera, size=(640,480))
-
-time.sleep(0.1)
-
-#out = cv2.VideoWriter('output.avi', -1, 20.0, (640,480))
-
-for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-        image = frame.array
-	out = cv2.VideoWriter('output.avi', -1, 20.0, (640,480))
-
-
-        # write the flipped frame
-        out.write(image)
-
-        cv2.imshow('frame',image)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            break
-	else:
-            break
-
+#if key == ord('q'):
+camera.stop_recording()
