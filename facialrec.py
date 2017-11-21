@@ -11,7 +11,7 @@ import os
 baseCascadePath = "/home/pi/bioe421project/haarcascades/"
  
 # xml files describing our haar cascade classifiers
-faceCascadeFilePath = baseCascadePath + "haarcascade_frontalface_default.xml"
+faceCascadeFilePath = baseCascadePath + "haarcascade_frontalface_alt.xml"
 noseCascadeFilePath = baseCascadePath + "haarcascade_mcs_nose.xml"
  
 # build our cv2 Cascade Classifiers
