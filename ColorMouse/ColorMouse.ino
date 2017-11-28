@@ -1,7 +1,7 @@
 
-// Alisa Momin and Sonali Mahendran
+// Alisa Momin and Sonali Mahendran, Team 6
 // BIOE 421 Microcontroller Applications
-// Final Project: Color Mouse and Filter Overlay
+// Final Project: SnapPainter
 
 // Circuit Playground Accelerometer Mouse Example
 // Tilt Circuit Playground left/right and up/down to move your mouse, and

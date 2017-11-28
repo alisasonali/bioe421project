@@ -1,4 +1,4 @@
-# Alisa Momin, Sonali Mahendran, Rice BIOE 421 Final Project: Color Mouse and Filter Overlay
+# Alisa Momin, Sonali Mahendran (Team 6): Rice BIOE 421 Final Project: SnapPainter
 
 ## Project Brainstorm:
 

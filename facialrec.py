@@ -1,3 +1,11 @@
+# Sonali Mahendran and Alisa Momin, Team 6
+# BIOE 421: Microcontroller Applications
+# Final Project: SnapPainter
+# Description: Detects the nose on a person's face in each frame of
+# video and puts the filter below it. Recommended to use with mustache
+# filter.
+# SOURCE CODE: https://sublimerobots.com/2015/02/dancing-mustaches/
+
 #! /usr/bin/python
 
 import cv2  # OpenCV Library
@@ -134,7 +142,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-
+# plays video
 os.system("ffmpeg -f image2 -framerate 12 -i /home/pi/bioe421project/modifiedframes/%d.png playback.avi")
 os.system("omxplayer playback.avi")
 # When everything is done, release the capture
