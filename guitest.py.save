@@ -1,0 +1,43 @@
+#! usr/bin/python
+
+from Tkinter import *
+import tkFont
+import RPi.GPIO as GPIO
+import os
+
+win = Tk()
+
+myFont = tkFont.Font(family = 'Helvetica', size = 30, weight = 'bold')
+
+def VideoON():
+	os.system("python SaveVideo.py")
+
+def FilterON():
+        os.system("python facialrec.py")
+
+def DrawON():
+	os.system("processing-java --sketch=/home/pi/bioe421project/drawpicture --run")
+
+def exitProgram():
+	print("Exit Button pressed")
+        GPIO.cleanup()
+	win.quit()	
+
+
+win.title("First GUI")
+win.geometry('800x480')
+
+exitButton  = Button(win, text = "Exit", font = myFont, command = exitProgram, height =2 , width = 6) 
+exitButton.pack(side = BOTTOM)
+
+VideoButton = Button(win, text = "Take a video!", font = myFont, command = VideoON, height = 2, width = 14 )
+VideoButton.pack()
+
+FilterButton = Button(win, text = "Add your filter!", font = myFont, command = FilterON, height = 2, width = 14 )
+FilterButton.pack()
+
+FilterButton = Button(win, text = "Add your filter!", font = myFont, command = FilterON, height = 2, width = 14 )
+FilterButton.pack()
+
+mainloop()
+
